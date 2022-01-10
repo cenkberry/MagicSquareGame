@@ -15,31 +15,26 @@
 
 <body class="bg-dark">
 
-
-    <div class="container-lg bg-success">
-        <!--page container-->
-
-
+    <div class="container-lg bg-success"><!--page container-->
+        
         <div class="row d-flex align-items-center justify-content-center">
-           
-           
-           
-           
+
             <div class="col-xs-12 col-sm-4 ps-4">
 
                 <h2 class="text-dark text-center mt-3">Magic Square Game</h2>
-                
-                 <p class="bg-dark p-3 text-light my-1">Put numbers 1,2,3,4,5,6,7,8,9 (each should be used once) into 3 times 3  square to make the same sum in all rows, all columns and both diagonals.</p>
-              
+
+                <p class="bg-dark p-3 text-light my-1">Put numbers 1,2,3,4,5,6,7,8,9 (each should be used once) into 3 times 3 square to make the same sum in all rows, all columns and both diagonals.</p>
+
                 <button class="btn btn-light mt-2" onclick="runner()">New Game</button>
-                <button class="btn btn-info mt-2"  onclick="clearbox()">Clear</button>
+                <button class="btn btn-info mt-2" onclick="clearbox()">Clear</button>
 
                 <div id="cong">Congratulations!</div>
+
 
             </div>
 
             <div class="col-sm-7" id="gridbox">
-
+                <div class="gameover"></div>
                 <div class="empty"></div>
                 <input class="inputs" type="number" id="boxA">
                 <input class="inputs" type="number" id="boxB">
@@ -73,13 +68,7 @@
 
         </div>
 
-    </div>
-    <!--page container-->
-
-
-
-
-
+    </div><!--page container-->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
