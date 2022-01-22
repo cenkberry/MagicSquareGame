@@ -4,18 +4,13 @@
     const gameover = document.querySelector(".gameover");
     //Take consts
 
-
     //New Game Button Function
     function runner() {
-
         gridbox.style.opacity = "1";
         cong.style.display = "none";
-
-
         clearbox();
 
         gridbox.addEventListener("change", function () {
-
             const boxA = Number(document.getElementById('boxA').value);
             const boxB = Number(document.getElementById('boxB').value);
             const boxC = Number(document.getElementById('boxC').value);
@@ -33,7 +28,6 @@
             let BEG = document.getElementById('BEG');
             let ADT = document.getElementById('ADT');
             let CET = document.getElementById('CET');
-
 
             var ABCres = boxA + boxB + boxC;
             ABC.innerHTML = ABCres;
@@ -59,7 +53,6 @@
             var CETres = boxC + boxE + boxT;
             CET.innerHTML = CETres;
 
-
             var correct = [];
             correct.push(boxA, boxB, boxC, boxD, boxE, boxF, boxT, boxG, boxH);
             var correct2 = [];
@@ -76,8 +69,6 @@
                 return correct2.indexOf(c) === index;
             });
 
-
-
             var result = correctCleaner.reduce(function (acc, val) {
                 return acc + val;
             }, 0);
@@ -88,105 +79,55 @@
             if (result == 45 && result2 == 15) {
 
                 let inputs = document.querySelectorAll("inputs");
-
-
                 gridbox.style.opacity = "0.2";
                 cong.style.display = "flex";
                 gameover.style.display = "block";
-
-
             }
 
         });
-
-
     };
     //New Game Button Function
 
-
-
-
     //Box Value Cleaner Function
     boxA.addEventListener("click", function () {
-
-
         boxA.value = "";
-
-
     });
 
     boxB.addEventListener("click", function () {
-
-
         boxB.value = "";
-
-
     });
 
     boxC.addEventListener("click", function () {
-
-
         boxC.value = "";
-
-
     });
 
     boxD.addEventListener("click", function () {
-
-
         boxD.value = "";
-
-
     });
 
     boxE.addEventListener("click", function () {
-
-
         boxE.value = "";
-
-
     });
 
     boxF.addEventListener("click", function () {
-
-
         boxF.value = "";
-
-
     });
 
     boxT.addEventListener("click", function () {
-
-
         boxT.value = "";
-
-
     });
 
     boxG.addEventListener("click", function () {
-
-
         boxG.value = "";
-
-
     });
 
     boxH.addEventListener("click", function () {
-
-
         boxH.value = "";
-
-
     });
     //Box Value Cleaner Function
 
-
-
-
-
     //Clear Button Function
     function clearbox() {
-
         const boxA = document.getElementById('boxA');
         const boxB = document.getElementById('boxB');
         const boxC = document.getElementById('boxC');
@@ -196,7 +137,6 @@
         const boxT = document.getElementById('boxT');
         const boxG = document.getElementById('boxG');
         const boxH = document.getElementById('boxH');
-
         let aa = document.getElementById('ABC');
         let bb = document.getElementById('DEF');
         let cc = document.getElementById('TGH');
@@ -224,7 +164,5 @@
         boxT.value = "";
         boxG.value = "";
         boxH.value = "";
-
-
     };
     //Clear Button Function

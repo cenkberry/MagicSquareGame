@@ -8,21 +8,19 @@
      -webkit-box-sizing: border-box;
      box-sizing: border-box;
      vertical-align: baseline;
-     
+
  }
 
  html {
      -webkit-box-sizing: border-box;
      box-sizing: border-box;
      font-size: 16px;
-    
- }
 
+ }
 
 body{
     position: relative;
 }
-
 #gridbox{
     position: relative;
     margin: 0 auto;
@@ -58,7 +56,7 @@ body{
     background-color: #ffffff;
     color: #000000;
     z-index: 3;
-    
+
 }
 
 .gameover{
@@ -69,9 +67,6 @@ body{
     height: 100%;
     background-color: rgba(0, 255, 255, 0);
 }
-
-
-
 
 #boxA,
 #boxB,
@@ -98,7 +93,6 @@ body{
     overflow: hidden;
 }
 
-
 #ABC,
 #DEF,
 #TGH,
@@ -122,31 +116,26 @@ body{
     overflow: hidden;
 }
 
-
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-
 input[type=number] {
   -moz-appearance: textfield;
 }
 
-
-@media screen and (max-width: 500px) 
+@media screen and (max-width: 500px)
 {
-  
+
     #gridbox{
-    
     display: grid;
     height: 20rem;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 25% 25% 25% 25%;
-    
-     }
-    
+    }
+
     #cong{
     width: 90%;
     height: 35%;
@@ -171,14 +160,11 @@ input[type=number] {
     background-color: #ffffff;
     color: #000000;
     z-index: 2;
-    
    }
-    
 }
 
-@media screen and (min-width: 1445px) 
+@media screen and (min-width: 1445px)
 {
-  
     #cong
     {
     width: 25%;
@@ -204,5 +190,4 @@ input[type=number] {
     color: #000000;
     z-index: 2;
    }
-    
 }
