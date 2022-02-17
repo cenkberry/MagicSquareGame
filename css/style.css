@@ -15,7 +15,6 @@
      -webkit-box-sizing: border-box;
      box-sizing: border-box;
      font-size: 16px;
-
  }
 
 body{
@@ -28,7 +27,6 @@ body{
     height: 30rem;
     grid-template-columns: 20% 20% 20% 20% 20%;
     grid-template-rows: 25% 25% 25% 25%;
-    padding: 1rem;
     opacity: 0;
     z-index: 0;
 }
@@ -56,7 +54,6 @@ body{
     background-color: #ffffff;
     color: #000000;
     z-index: 3;
-
 }
 
 .gameover{
@@ -112,7 +109,7 @@ body{
     justify-content: center;
     background-color: #fcfc01;
     border:1px solid #000000;
-    font-size: 3rem;
+    font-size: 2.5rem;
     overflow: hidden;
 }
 
@@ -128,7 +125,6 @@ input[type=number] {
 
 @media screen and (max-width: 500px)
 {
-
     #gridbox{
     display: grid;
     height: 20rem;
@@ -160,6 +156,9 @@ input[type=number] {
     background-color: #ffffff;
     color: #000000;
     z-index: 2;
+   }
+   .rounded{
+       font-size: 0.8rem;
    }
 }
 

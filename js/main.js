@@ -58,7 +58,6 @@
             var correct2 = [];
             correct2.push(ABCres, DEFres, TGHres, AEHres, CFHres, BEGres, ADTres, CETres);
 
-
             let correctCleaner = correct.filter((c, index) => {
 
                 return correct.indexOf(c) === index;
@@ -77,13 +76,10 @@
             }, 0);
 
             if (result == 45 && result2 == 15) {
-
-                let inputs = document.querySelectorAll("inputs");
                 gridbox.style.opacity = "0.2";
                 cong.style.display = "flex";
                 gameover.style.display = "block";
             }
-
         });
     };
     //New Game Button Function
@@ -126,6 +122,61 @@
     });
     //Box Value Cleaner Function
 
+    boxA.addEventListener("keyup", function () {
+        
+        if(boxA.value > 9){
+            boxA.value = "";
+        }
+    });
+    boxB.addEventListener("keyup", function () {
+        
+        if(boxB.value > 9){
+            boxB.value = "";
+        }
+    });
+    boxC.addEventListener("keyup", function () {
+        
+        if(boxC.value > 9){
+            boxC.value = "";
+        }
+    });
+    boxD.addEventListener("keyup", function () {
+        
+        if(boxD.value > 9){
+            boxD.value = "";
+        }
+    });
+    boxE.addEventListener("keyup", function () {
+        
+        if(boxE.value > 9){
+            boxE.value = "";
+        }
+    });
+    boxF.addEventListener("keyup", function () {
+        
+        if(boxF.value > 9){
+            boxF.value = "";
+        }
+    });
+    boxT.addEventListener("keyup", function () {
+        
+        if(boxT.value > 9){
+            boxT.value = "";
+        }
+    });
+    boxG.addEventListener("keyup", function () {
+        
+        if(boxG.value > 9){
+            boxG.value = "";
+        }
+    });
+    boxH.addEventListener("keyup", function () {
+        
+        if(boxH.value > 9){
+            boxH.value = "";
+        }
+    });
+    
     //Clear Button Function
     function clearbox() {
         const boxA = document.getElementById('boxA');
